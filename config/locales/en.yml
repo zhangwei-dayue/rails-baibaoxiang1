@@ -24,3 +24,4 @@ en:
   admin:
     event_list: Admin Event List
   hello: "Hello world"
+  hello: "Hi %{name}"
