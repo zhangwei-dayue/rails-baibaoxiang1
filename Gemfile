@@ -46,6 +46,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 gem 'rails-i18n'
+gem 'devise-i18n'
 
 group :development do
   gem 'faker'
