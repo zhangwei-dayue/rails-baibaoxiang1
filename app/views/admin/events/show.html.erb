@@ -1,4 +1,6 @@
 <h1><%= @event.name %></h1>
+<!-- <h2><%= display_event_status(@event) %></h2> -->
+<h2><%= t(@event.status, :scope => "event.status") %></h2>
 
 <p>
   <%= link_to "打開前台", event_path(@event), :target => "_blank", :class => "btn btn-primary" %>
