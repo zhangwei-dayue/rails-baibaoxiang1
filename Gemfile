@@ -51,6 +51,7 @@ gem 'select2-rails'
 gem 'nested_form_fields'
 gem 'ckeditor'
 gem 'bootstrap-datepicker-rails'
+gem 'ranked-model'
 
 group :development do
   gem 'faker'
