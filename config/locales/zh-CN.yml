@@ -10,3 +10,7 @@
   hello: "亲～ %{name} 你好："
   admin:
     event_list: 活动列表管理
+  registration:
+    status:
+      pending: 报名尚未成功
+      confirmed: 报名成功
