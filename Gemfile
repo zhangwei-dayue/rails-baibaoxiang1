@@ -57,6 +57,7 @@ gem 'kaminari'
 gem 'ransack'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'paper_trail'
 
 group :development do
   gem 'faker'

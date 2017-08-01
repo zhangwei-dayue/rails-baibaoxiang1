@@ -35,7 +35,7 @@ class Admin::EventRegistrationsController < AdminController
   end
 
   def destroy
-    @registration = @event.registration.find_by_uuid(params[:id])
+    @registration = @event.registrations.find_by_uuid(params[:id])
     @registration.destroy
 
     redirect_to admin_event_registrations_path(@event)
