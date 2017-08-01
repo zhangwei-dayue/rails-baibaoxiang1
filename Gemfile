@@ -54,6 +54,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
 gem 'kaminari'
+gem 'ransack'
 
 group :development do
   gem 'faker'

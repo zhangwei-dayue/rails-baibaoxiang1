@@ -2,7 +2,8 @@ class Admin::EventRegistrationsController < AdminController
   before_action :find_event
 
   def index
-    @registrations = @event.registrations.includes(:ticket).order("id DESC").page(params[:page])
+    @q = @event.registrations.ransack(params[:q])
+    @registrations = @q.result.includes(:ticket).order("id DESC").page(params[:page])
 
     if params[:start_on].present?
       @registrations = @registrations.where("created_at >= ?", Date.parse(params[:start_on]).beginning_of_day)
