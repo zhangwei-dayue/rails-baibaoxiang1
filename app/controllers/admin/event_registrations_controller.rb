@@ -12,6 +12,10 @@ class Admin::EventRegistrationsController < AdminController
       @registrations = @registrations.where("created_at <= ?", Date.parse(params[:end_on]).end_of_day)
     end
 
+    if params[:registration_id].present?
+      @registrations = @registrations.where( :id => params[:registration_id].split(","))
+    end
+
     if Array(params[:statuses]).any?
       @registrations = @registrations.by_status(params[:statuses])
     end
