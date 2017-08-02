@@ -58,6 +58,7 @@ gem 'ransack'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'paper_trail'
+gem 'premailer-rails'
 
 group :development do
   gem 'faker'
