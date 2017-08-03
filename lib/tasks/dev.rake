@@ -41,7 +41,7 @@ namespace :dev do
     success = 0
     failed_records = []
 
-    CSV.foreach("#{Rails.root}/tmp/registration.csv") do |row|
+    CSV.foreach("#{Rails.root}/tmp/registrations.csv") do |row|
       registration = event.registrations.new(:status => "confirmed", :ticket => tickets.find{ |t| t.name == row[0]}, :name => row[1], :email => row[2], :cellphone => row[3], :website => row[4], :bio => row[5], :created_at => Time.parse(row[6]))
       if registration.save
         success += 1
