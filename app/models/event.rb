@@ -15,6 +15,7 @@ class Event < ApplicationRecord
   belongs_to :category, :optional => true
   has_many :tickets, :dependent => :destroy
   has_many :registrations, :dependent => :destroy
+  has_many :registration_imports, :dependent => :destroy
   accepts_nested_attributes_for :tickets, :allow_destroy => true, :reject_if => :all_blank
 
   has_many :attachments, :class_name => "EventAttachment", :dependent => :destroy
