@@ -60,6 +60,7 @@ gem 'mini_magick'
 gem 'paper_trail'
 gem 'premailer-rails'
 gem 'pry'
+gem 'sidekiq'
 
 group :development do
   gem 'faker'
